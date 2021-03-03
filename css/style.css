@@ -96,6 +96,7 @@ li {
 .search__button {
     border: none;
     background-color: #fbfcf7;
+    cursor: pointer;
 }
 .search__button:focus {
     outline: none;
