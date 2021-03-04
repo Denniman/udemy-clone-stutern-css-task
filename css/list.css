@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    background-color: tomato;
+    padding: 2rem 3rem;
+}
+
+.header--main {
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+    list-style-image: url(../assets/SVG/chevron-small-right.svg);
+}
+
+li {
+    padding-top: 2rem;
+}
