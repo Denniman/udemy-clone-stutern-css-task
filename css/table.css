@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+table {
+    margin: 3rem auto;
+    font-size: 2rem;
+    font-weight: 300;
+    border: 1px solid #ddd;
+}
+
+caption {
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding: 1.5rem 1rem;
+    color: #fff;
+    background-color: #6888cc;
+}
+
+th, td {
+    text-align: left;
+    padding: 1.6rem;
+}
+
+.season {
+    font-weight: 400;
+}
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }

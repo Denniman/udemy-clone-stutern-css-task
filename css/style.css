@@ -19,6 +19,8 @@ html {
 body {
     color: var(--color-main);
     font-family: 'Roboto', sans-serif;
+    /* remove after testing */
+    height: 170vh;
 }
 
 li {
@@ -224,6 +226,21 @@ li {
 
 .mt-sm {
     margin-top: .8rem;
+}
+
+
+.card--side__back {
+    font-size: 1.3rem;
+    width: 35rem;
+    height: 43.5rem;
+    background-color: tomato;
+    padding: 2rem 3rem;
+    line-height: 1.9;
+    /* display: none; */
+}
+
+.card--side__back:hover {
+    display: block;
 }
 
 .hidden {
