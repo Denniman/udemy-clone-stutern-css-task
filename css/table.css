@@ -40,4 +40,36 @@ th, td {
 }
   tr:nth-child(even) {
     background-color: #f2f2f2;
-  }
+}
+
+@media only screen and (max-width: 784px) {
+    html {
+        font-size: 50%;
+    }
+
+    table {
+        width: 100%;
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    html {
+        font-size: 50%;
+    }
+
+    table {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    caption {
+        font-size: 2rem;
+        padding: 1.5rem 1rem;
+    }
+    
+    th, td {
+        padding: 1rem;
+    }
+    
+}
