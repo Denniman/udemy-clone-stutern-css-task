@@ -85,6 +85,10 @@ li {
     margin-left: -3.5rem;
 }
 
+.search__icon {
+    fill: #767772;
+}
+
 .search__input:focus {
     outline: none;
 }
@@ -98,6 +102,7 @@ li {
     background-color: #fbfcf7;
     cursor: pointer;
 }
+
 .search__button:focus {
     outline: none;
 }
