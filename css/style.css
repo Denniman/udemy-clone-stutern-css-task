@@ -43,7 +43,7 @@ li {
 .search__icon, 
 .heart--icon, 
 .shopping-cart--icon, 
-.bell--icon{
+.bell--icon {
     width: 2rem;
     height: 2rem;
 }
@@ -215,10 +215,104 @@ li {
 
 .best-seller--btn {
     padding: .4rem .7rem;
-    margin-top: .8rem;
     color: #633f00;
     font-weight: 700;
     border-radius: .4rem;
     border: none;
     background-color: #fcdb8d;
+}
+
+.mt-sm {
+    margin-top: .8rem;
+}
+
+.hidden {
+    margin: 3rem 10rem;
+    display: none;
+}
+
+.hidden__card {
+    background-color: tomato;
+    background-color: #fbfcf7;
+    font-size: 1.3rem;
+    width: 30%;
+    height: 47.5rem;
+    padding: 2rem 3rem;
+    line-height: 1.7;
+}
+
+.hidden__header {
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.check--icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.updated--text {
+    display: inline;
+    color: #2D8643;
+    margin-left: .8rem;
+}
+
+.updated--month {
+    font-weight: 700;
+}
+
+.description-text {
+    font-size: 1.5rem;
+}
+
+.description--list {
+    display: flex;
+    flex-direction: column;
+}
+
+.description__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text {
+    margin-left: 1rem;
+}
+
+.cart--checkout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn--cart {
+    text-align: center;
+    text-decoration: none;
+    border-radius: .2rem;
+    color: #fff;
+    font-weight: 700;
+    padding: 1.3rem 2rem;
+    background-color: #ec5252;
+    flex: 0 0 80%;
+    transition: all .2s;
+}
+
+.btn--cart:hover {
+    background-color: #e61c1c;
+}
+
+.cart--heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .7rem;
+    border-radius: 50%;
+    border: 1px solid #779395;
+}
+
+.heart--icon--green {
+    fill: #34767e;
+    width: 2.5rem;
+    height: 2.5rem;
 }
