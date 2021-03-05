@@ -19,8 +19,7 @@ html {
 body {
     color: var(--color-main);
     font-family: 'Roboto', sans-serif;
-    /* remove after testing */
-    height: 170vh;
+    height: 120vh;
 }
 
 li {
@@ -48,6 +47,7 @@ li {
 .bell--icon {
     width: 2rem;
     height: 2rem;
+    fill: #767772;
 }
 
 .nav--list {
@@ -85,10 +85,6 @@ li {
     width: 100%;
     height: 5rem;
     margin-left: -3.5rem;
-}
-
-.search__icon {
-    fill: #767772;
 }
 
 .search__input:focus {
@@ -144,18 +140,52 @@ li {
 }
 
 .card--container {
-    margin-top: 7.5rem;
+    margin: 7rem 2rem 10rem;
     display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
 .card {
-    flex: 0 0 18%;
-    background-color: #fff;
-    height: 30rem;
     cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.card__side {
+    width: 25rem; 
+    height: 33rem;
+    line-height: 1.7;
+}
+
+.card__side--hidden {
+    display: none;
+    padding: 2rem 3rem;
+    line-height: 1.7;
+    width: 30rem;
+    height: 47rem;
+    border-radius: .5rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+    background-color: #fbfcf7; 
+}
+
+.card:hover .card__side--hidden{
+    display: block;
+    position: absolute;
+    top: 35%;
+    left: -20rem;
+    transform: translate(135%, -17rem);
+    z-index: 1;
+}
+
+.card:hover .card__side--hidden--last {
+    display: block;
+    position: absolute;
+    top: 35%;
+    left: -20rem;
+    transform: translate(-35%, -14rem);
+    z-index: 1;
 }
 
 .card--img {
@@ -196,7 +226,6 @@ li {
 }
 .rating-text {
     font-weight: 700;
-    color: #9f6633;
     color: #af5634;
     margin-right: .5rem;
 }
@@ -228,7 +257,6 @@ li {
     margin-top: .8rem;
 }
 
-
 .card--side__back {
     font-size: 1.3rem;
     width: 35rem;
@@ -236,26 +264,10 @@ li {
     background-color: tomato;
     padding: 2rem 3rem;
     line-height: 1.9;
-    /* display: none; */
 }
 
 .card--side__back:hover {
     display: block;
-}
-
-.hidden {
-    margin: 3rem 10rem;
-    display: none;
-}
-
-.hidden__card {
-    background-color: tomato;
-    background-color: #fbfcf7;
-    font-size: 1.3rem;
-    width: 30%;
-    height: 47.5rem;
-    padding: 2rem 3rem;
-    line-height: 1.7;
 }
 
 .hidden__header {
@@ -295,12 +307,14 @@ li {
 
 .text {
     margin-left: 1rem;
+    font-size: 1.2rem;
 }
 
 .cart--checkout {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 2.5rem;
 }
 
 .btn--cart {
@@ -308,10 +322,11 @@ li {
     text-decoration: none;
     border-radius: .2rem;
     color: #fff;
+    font-size: 1.5rem;
     font-weight: 700;
-    padding: 1.3rem 2rem;
+    padding: 1rem 2rem;
     background-color: #ec5252;
-    flex: 0 0 80%;
+    flex: 0 0 85%;
     transition: all .2s;
 }
 
@@ -324,6 +339,7 @@ li {
     justify-content: center;
     align-items: center;
     padding: .7rem;
+    margin-left: .5rem;
     border-radius: 50%;
     border: 1px solid #779395;
 }
